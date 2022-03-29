@@ -1,6 +1,6 @@
 
 variable "region" {
-  default = "us-east-1"
+  default = "eu-west-3"
 }
 
 # Consul variables
