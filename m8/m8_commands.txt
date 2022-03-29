@@ -10,7 +10,7 @@ consul agent -bootstrap -config-file="config/consul-config.hcl" -bind="127.0.0.1
 export CONSUL_HTTP_TOKEN=SECRETID_VALUE
 
 # Windows
-$env:CONSUL_HTTP_TOKEN="b963c58a-5202-2ca9-1835-9f10a4da2393"
+$env:CONSUL_HTTP_TOKEN=""
 
 # Create two tokens (networking and applications)
 consul acl token create -policy-name=networking -description="Jenkins networking"
@@ -25,7 +25,7 @@ docker logs jenkins
 
 
 # Si trova anche sotto /var/jenkins_home/secrets/initialAdminPassword
-#Copy the admin password -> 4a4ebfb11e284b93b7b41261cd41667c
+
 # 
 http://127.0.0.1:8080
 
